@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: #220930;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.certain_width_section {
+    display: none;
+}
+
+.main_left_part_page {
+    width: 33.58042994810971%;
+    background:url(../images/bg-main-desktop.png);
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+}
+img {
+    position: relative;
+    left: 150px;
+}
+.grey_card {
+    left: 200px;
+}
+
+
+.main_right_part_page {
+    width: 66.41957005189029%;
+    background-color: white;
+    place-items: center;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    align-content: center;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+.input {
+    width: 375px;
+}
+
+.general_input {
+    margin-bottom: 15px;
+    border: 1px solid #dfdfdf;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+
+.mm_yy {
+    width: 78px;
+    margin-bottom: 40px;
+}
+.CVC {
+    display: flex;
+    gap: 20px;
+}
+.CVC_input {
+    width:191px;
+    margin-bottom: 40px;
+}
+
+.button {
+    width: 381px;
+    height: 53px;
+    background-color: #220930;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1231px) {
+    img {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1079px){
+    img {
+        left: 100px;
+        width: 80%;
+    }
+    .grey_card {
+        left: 150px;
+    }
+    .general_input {
+        padding: 4px;
+    }
+}
+
+@media only screen and (max-width: 885px){
+    main {
+        flex-direction: column;
+        gap: 100px;
+    }
+    .main_left_part_page{
+        display: none;
+    }
+    .certain_width_section {
+        display:table;
+        width: 100%;
+    }
+    .certain_width_section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(../images/bg-main-mobile.png);
+        background-size: cover;
+    }
+    .main_right_part_page {
+        width: 100%;
+    }
+    img {
+        left: 0px;
+        top: 150px;
+    }
+    .grey_card {
+        top: 55px;
+        left: -15px;
+    }
+
+}

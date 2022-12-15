@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./design/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+</head>
+<body>
+
+  <main>
+    <section class="main_left_part_page main_sections">
+      <img src="./images/bg-card-front2.png" class="colored_card">
+      <img src="./images/bg-card-back2.png" class="grey_card">
+    </section>
+    <section class="certain_width_section">
+      <div>
+        <img src="./images/bg-card-front2.png" class="colored_card">
+        <img src="./images/bg-card-back2.png" class="grey_card">
+      </div>
+    </section>
+
+
+    <section class="main_right_part_page main_sections">
+      <form>
+        <div class="input_and_headersOboveInput">
+          <p>CARDHOLDER NAME</p>
+          <input type="text" placeholder="e.g. Jane Appleseed" class="input general_input" required>
+        </div>
+
+        <div class="input_and_headersOboveInput">
+          <p>CARD NUMBER</p>
+          <input type="tel" placeholder="e.g. 1234 5678 9123 0000" class="input general_input" required>
+        </div>
+
+        <div class="CVC">
+
+          <div class="input_and_headersOboveInput">
+            <p>Exp. Date (MM/YY)</p>
+            <input type="tel" placeholder="MM" class="general_input mm_yy" required>
+            <input type="tel" placeholder="YY" class="general_input mm_yy" required>
+          </div>
+
+          <div class="input_and_headersOboveInput">
+            <p>CVC</p>
+            <input type="tel" placeholder="CVC" class="general_input CVC_input" required>
+          </div>
+
+        </div>
+
+        <button type="submit" class="button">Confirm</button>
+        
+      </form>
+      
+    </section>
+
+  </main>
+
+  
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sm7654</a>.
+  </div>
+  !-->
+</body>
+</html>
